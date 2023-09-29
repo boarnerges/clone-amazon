@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <header className="min-w-[1000px]">
       <div className="flex bg-amazonclone text-white h-[60px]">
-        <div className="flex items-center">
+        <div className="flex items-center m-4">
           <img
             className="h-[35px] w-[100px] m-2"
             src={"../images/amazon.png"}
@@ -15,7 +15,7 @@ const NavBar = () => {
           </div>
         </div>
         <div className="flex">Middle</div>
-        <div className="flex items-center">
+        <div className="flex items-center m-4">
           <div className="pr-4 pl-4">
             <div className="text-xs xl:text-sm">Hello, sign in</div>
             <div className="text-sm xl:text-base font-bold">
@@ -27,7 +27,8 @@ const NavBar = () => {
             <div className="text-sm xl:text-base font-bold">& Orders</div>
           </div>
           <div className="flex pr-3 pl-3">
-            <ShoppingCartIcon />
+            <ShoppingCartIcon className="h-[48px]" />
+            <div className="mt-7 text-xs xl:text-sm font-bold">Cart</div>
           </div>
         </div>
       </div>
